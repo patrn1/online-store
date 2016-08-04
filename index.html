@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Мир Стройки</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <meta charset="utf-8">
+    <script
+              src="https://code.jquery.com/jquery-1.12.4.min.js"
+              integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+              crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+            integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <!--[if (lte IE 9)]>
+       <link rel="stylesheet" type="text/css" href="css/fallback.css">
+    <![endif]-->
+</head>
+<body>
+    <div class="header">
+        <div class="company-info">
+            <div class="company-info__logo"></div>
+            <div class="company-info__name"></div>
+            <div class="company-info__desc">строительные материалы</div>
+        </div>
+        <div class="internet-shop-phone">
+            <div class="internet-shop-phone__text">Интернет-магазин</div>
+            <div class="internet-shop-phone__number"><span class="city-code">(343)</span>111-22-32</div>
+        </div>
+        <div class="build-services-phone">
+            <div class="build-services-phone__text">Строительные услуги</div>
+            <div class="build-services-phone__number"><span class="city-code">(343)</span>111-24-34</div>
+        </div>
+        <div class="header__misc">
+            <div class="working-hours">Пн−Пт, 9:00−18:00</div>
+            <input  class="order-call" type="button" value="Заказать обратный звонок">
+        </div>
+        <ul class="cart">
+            <li class="cart__btn-wrapper"><input class="cart__btn" type="button" value="Корзина" name=""></li>
+            <li class="cart__status">Товаров на сумму:</li>
+            <li>23 000 ₷</li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="filter-options-box">
+            <ul class="manuf-filter__options">
+                <li>
+                    <input
+                        class="filter__option filter__option_no-filter filter__option_chosen"
+                        type="button"
+                        value="Любой">
+                </li>
+                <li><input class="filter__option" type="button" value="Азори"></li>
+                <li><input class="filter__option" type="button" value="Атем"></li>
+                <li><input class="filter__option" type="button" value="Беларти"></li>
+                <li><input class="filter__option" type="button" value="Береза Керамика"></li>
+                <li><input class="filter__option" type="button" value="Интеркерама"></li>
+                <li><input class="filter__option" type="button" value="Италон"></li>
+                <li><input class="filter__option" type="button" value="Керабуд"></li>
+                <li><input class="filter__option" type="button" value="Керама Марацци"></li>
+                <li><input class="filter__option" type="button" value="Керамин"></li>
+            </ul>
+            <ul class="manuf-filter__options">
+                <li><input class="filter__option" type="button" value="ЛасселсБергер"></li>
+                <li><input class="filter__option" type="button" value="Латина"></li>
+                <li><input class="filter__option" type="button" value="Нефрит-Керамика"></li>
+                <li><input class="filter__option" type="button" value="Опочно"></li>
+                <li><input class="filter__option" type="button" value="Сокол"></li>
+                <li><input class="filter__option" type="button" value="Технотайл"></li>
+                <li><input class="filter__option" type="button" value="Тубадзин"></li>
+                <li><input class="filter__option" type="button" value="Уралкерамика"></li>
+                <li><input class="filter__option" type="button" value="Церсанит"></li>
+            </ul>
+            <div class="color-filter__options">
+                <div class="filter__option filter__option_no-filter filter__option_chosen">Любой</div>
+                <div class="filter__option color-filter__white"></div>
+                <div class="filter__option color-filter__red"></div>
+                <div class="filter__option color-filter__brown"></div>
+                <div class="filter__option color-filter__yellow"></div>
+                <div class="filter__option color-filter__black"></div>
+                <div class="filter__option color-filter__green"></div>
+                <div class="filter__option color-filter__l-blue"></div>
+                <div class="filter__option color-filter__blue"></div>
+                <div class="filter__option color-filter__violet"></div>
+                <div class="filter__option color-filter__pink"></div>
+                <div class="filter__option color-filter__turq"></div>
+            </div>
+        </div>
+        <div class="left-sidebar">
+            <div class="catalogue">
+                <div class="catalogue__header">Каталог товаров</div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Грунтовки</a></div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Декоративные покрытия</a></div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Инструменты</a>
+                </div>
+                <div class="catalogue__link-wrapper catalogue__link-wrapper_selected">
+                    <a class="catalogue__link" href="">Керамическая плитка, керамогранит</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Кирпич, стеновые материалы</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Кровельный материал, гидроизоляция</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Лакокрасочная продукция</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Ленты, скотчи, серпянки</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Листовой материал</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Материал для фасадов</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Металлопрокат</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Метизы, крепёж</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Напольные покрытия</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Панели ПВХ, комплектующие</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Пены монтажные, герметики, клея</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Пиломатериал</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Поликарбонат сотовый, теплицы</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Потолки и потолочные системы</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Сетки</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Строительные смеси</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Тара, упаковка</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Тепло-, шумоизоляция</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Тёплые полы</a>
+                </div>
+                <div class="catalogue__link-wrapper">
+                    <a class="catalogue__link" href="">Цемент, сыпучие материалы</a>
+                </div>
+            </div>
+            <div class="viewed-products">
+                <div class="viewed-products__header">Вы смотрели</div>
+                <div class="product-mini-card">
+                    <div class="product-mini-card__image-box">
+                        <img class="product-mini-card__image" src="images/products/p1.png">
+                    </div>
+                    <a class="product-mini-card__name" href="">Керамогранит Basic</a>
+                    <span class="product-mini-card__price">508 рублей/м<sup>2</sup></span>
+                    <input type="button" class="product-mini-card__btn dashed-btn_orange" value="Добавить в корзину" name="">
+                </div>
+                <div class="product-mini-card">
+                    <div class="product-mini-card__image-box">
+                        <img class="product-mini-card__image" src="images/products/p2.png">
+                    </div>
+                    <a class="product-mini-card__name" href="">Керамогранит Prestige</a>
+                    <span class="product-mini-card__price">914 рублей/м<sup>2</sup></span>
+                    <input type="button" class="product-mini-card__btn dashed-btn_orange" value="Добавить в корзину" name="">
+                </div>
+                <div class="product-mini-card">
+                    <div class="product-mini-card__image-box">
+                        <img class="product-mini-card__image" src="images/products/p3.png">
+                    </div>
+                    <a class="product-mini-card__name" href="">Керамогранит Kito 600 x 600</a>
+                    <span class="product-mini-card__price">1 300 рублей/м<sup>2</sup></span>
+                    <input type="button" class="product-mini-card__btn dashed-btn_orange" value="Добавить в корзину" name="">
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="social-links__header">Мы в соц. сетях</div>
+                <a class="social-link social-link_fb" href=""></a>
+                <a class="social-link social-link_gp" href=""></a>
+                <a class="social-link social-link_tw" href=""></a>
+                <a class="social-link social-link_vk" href=""></a>
+            </div>
+        </div>
+        <div class="nav">
+            <a href="" class="nav-btn nav-btn_services">Услуги компании</a>
+            <a href="" class="nav-btn nav-btn_delivery">Доставка</a>
+            <a href="" class="nav-btn nav-btn_payment">Оплата</a>
+            <a href="" class="nav-btn nav-btn_articles">Полезные статьи</a>
+            <a href="" class="nav-btn nav-btn_contacts">Контакты</a>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <div class="product-search">
+                    <input type="text" name="" placeholder="Поиск" class="product-search__input">
+                    <input type="button" value="Найти" class="search-btn product-search__btn">
+                    <div class="product-search__example"><span class="italic">Например: </span>плитка kerama marazzi</div>
+                </div>
+                <ul class="user-join-links">
+                    <li><a href="" class="italic user-join-links__login">Войти</a></li>
+                    <li><a href="" class="italic user-join-links__register">Зарегистрироваться</a></li>
+                </ul>
+            </div>
+            <div class="breadcrumb">
+                <a class="breadcrumb__link" href="">Главная</a>
+                <a>Керамическая плитка, керамогранит</a>
+            </div>
+            <div class="search-panel">
+                <div class="search-filters">
+                    <div class="search-filters__header">Подобрать</div>
+                    <div class="search-filters__wrapper">
+                        <div class="filter price-filter">
+                            <span class="filter__text">Цена:</span>
+                            <div class="slider-wrapper">
+                                <span class="price min-price splitted-price"></span>
+                                <span class="price max-price splitted-price"></span>
+                                <div id="price-slider"></div>
+                            </div>
+                        </div>
+                        <div class="filter size-filter">
+                            <span class="filter__text">Размер, мм:</span>
+                            <input type="text" class="size-input size-filter__min-input" name="">
+                            <span class="size-filter__dash">—</span>
+                            <input type="text" class="size-input size-filter__max-input" name="">
+                        </div>
+                    </div>
+                    <div class="search-filters__wrapper">
+                        <div class="filter color-filter">
+                            <span class="filter__text">Цвет:</span>
+                            <input type="button" id="filter-color-btn" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                        <div class="filter texture-filter">
+                            <span class="filter__text">Фактура:</span>
+                            <input type="button" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                    </div>
+                    <div class="search-filters__wrapper">
+                        <div class="filter decoration-filter">
+                            <span class="filter__text">Рисунок декора:</span>
+                            <input type="button" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                        <div class="filter surface-filter">
+                            <span class="filter__text">Поверхность:</span>
+                            <input type="button" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                    </div>
+                    <div class="search-filters__wrapper">
+                        <div class="filter manufacturer-filter">
+                            <span class="filter__text">Производитель:</span>
+                            <input type="button" id="filter-manuf-btn" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                        <div class="filter country-filter">
+                            <span class="filter__text">Страна:</span>
+                            <input type="button" class="filter-btn dashed-btn_orange" value="Любой">
+                        </div>
+                    </div>
+                </div>
+                <div class="search-panel__bottom-sidebar">
+                    <input type="button" value="Найти" class="search-btn">
+                    <span class="search-result-status">Найдено: 56 товаров</span>
+                    <input type="button" class="dashed-btn_orange filter__drop-filter-btn" value="Сбросить фильтр">
+                </div>
+            </div>
+            <div class="search-result">
+                <div class="sort-panel">
+                    <span class="sort-panel__text">Сортировать по:</span>
+                    <input class="sort-by-btn sort-by-btn_name sort-by-btn_pressed" type="button" value="названию" name="">
+                    <input class="sort-by-btn sort-by-btn_price dashed-btn_orange" type="button" value="цене" name="">
+                </div>
+                <div class="search-result__products">
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p1.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Basic</a>
+                            <span class="product-card__price">508 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p2.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Prestige</a>
+                            <span class="product-card__price">914 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p3.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Kito 600 x 600</a>
+                            <span class="product-card__price">1 300 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p4.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Domino (Zeus)</a>
+                            <span class="product-card__price">305 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p5.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Basic</a>
+                            <span class="product-card__price">508 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p6.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Prestige</a>
+                            <span class="product-card__price">914 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p7.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Керамогранит Kito 600 x 600</a>
+                            <span class="product-card__price">1300 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-card___image-box">
+                            <img class="product-card__image" src="images/products/p8.png">
+                        </div>
+                        <div class="product-card__desc">
+                            <a class="product-card__name" href="">Domino (Zeus)</a>
+                            <span class="product-card__price">305 рублей/м<sup>2</sup></span>
+                        </div>
+                        <div class="product-card__btn-wrapper">
+                            <div class="product-card__cart-icon"></div>
+                            <input type="button" value="В корзину" class="product-card__cart-btn" name="">
+                        </div>
+                    </div>
+                </div>
+                <div class="search-result__page-links">
+                    <a  class="search-result__page-link" href="">8</a>
+                    <a  class="search-result__page-link" href="">7</a>
+                    <a  class="search-result__page-link" href="">6</a>
+                    <a  class="search-result__page-link" href="">5</a>
+                    <a  class="search-result__page-link" href="">4</a>
+                    <a  class="search-result__page-link" href="">3</a>
+                    <a  class="search-result__page-link" href="">2</a>
+                    <a  class="search-result__page-link search-result__page-link_selected" href="">1</a>
+                </div>
+            </div>
+            <div class="product-info">
+                <h2 class="product-info__header">Керамическая плитка и керамогранит</h2>
+                <div class="product-info__article">
+                    <p class="product-info__article-column">
+                        Ирония возможна. Снижение представляет собой опре-<br>деленный фарс, таким образом, сходные законы кон-<br>трастирующего развития характерны и для процессов<br>в психике. Волна трансформирует онтогенез, подобный исследовательский подход к проблемам художествен-<br>ной типологии можно обнаружить у К.Фосслера. При наступлении резонанса поверхность аккумулирует электронный принцип артистизма, однако само по себе
+                    </p>
+                    <p class="product-info__article-column">
+                        состояние игры всегда амбивалентно. Художественная эпоха многопланово индуцирует солитон, что-то подоб-<br>ное можно встретить в работах Ауэрбаха и Тандлера.<br>Экситон использует циркулирующий художественный ритуал, подобный исследовательский подход к про-<br>блемам художественной типологии можно обнаружить<br>у К.Фосслера. 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="wave"></div>
+        <div class="footer">
+            <div class="sitemap">
+                <a class="sitemap__link" href="">Услуги компании</a>
+                <a class="sitemap__link sitemap__link_delivery" href="">Доставка</a>
+                <a class="sitemap__link sitemap__link_payment" href="">Оплата</a>
+                <a class="sitemap__link sitemap__link_articles" href="">Полезные статьи</a>
+                <a class="sitemap__link sitemap__link_contacts" href="">Контакты</a>
+            </div>
+            <div class="copyright">&copy;&nbsp;2013 ООО «Мир Стройки»</div>
+            <div class="address">г. Ревда, ул. О. Кошевого, 25, оф. 10</div>
+        </div>
+    </div>
+    <!--[if (lte IE 9)]>
+      <script type="text/javascript" src="js/fallback.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/filters.js"></script>
+</body>
+</html>
